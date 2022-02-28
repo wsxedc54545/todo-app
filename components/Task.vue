@@ -71,6 +71,7 @@ export default {
       const task = this.task
       const data = { newContent, task}
       this.$store.commit('EDIT_TASK', data );
+      this.newContent = ''
     },
   },
 }
@@ -115,12 +116,13 @@ export default {
       .edit-area {
         display: none;
         resize: none;
+        height: 80px;
+        position: absolute;
+        top: 7%;
+        right: 3%;
       }
       .edit-area.edit {
         display: block;
-        position: absolute;
-        top: 10%;
-        right: 3%;
       }
     }
     .is-complete {
