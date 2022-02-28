@@ -95,7 +95,7 @@ export default {
     }
     button {
       position: absolute;
-      width: 155px;
+      width: 25%;
       height: 90px;
       top: 18%;
       right: 5%;
@@ -118,6 +118,11 @@ export default {
     }
     .alert {
       display: block !important;
+    }
+  }
+  @media (max-width: 991.8px) {
+    &__create-new {
+      width: 75%;
     }
   }
   &__tasks {
