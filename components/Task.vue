@@ -28,7 +28,7 @@
         maxlength="20"
         minlength="1"
         draggable="false"
-        @keydown.enter="editContent"
+        @keydown.enter="submitEdit"
       />
       <p> By {{ task.author }} </p>
       <div class="task__buttons">
